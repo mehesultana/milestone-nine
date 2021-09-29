@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 
 const Header = () => {
@@ -8,22 +9,12 @@ const Header = () => {
 			<img className="logo" src={logo} alt="" />
 			<Container>
 				<Nav className="me-5">
-					<Nav.Link href="#home">Home</Nav.Link>
-					<Nav.Link href="#features">Menu</Nav.Link>
-					<Nav.Link href="#pricing">Pricing</Nav.Link>
+					<NavLink to="/home">Home</NavLink>
+					<NavLink to="/home">Meal</NavLink>
+					<NavLink to="/home">Home</NavLink>
 				</Nav>
 			</Container>
 		</Navbar>
-
-		// <div className="header">
-
-		// 	<img className="logo" src={logo} alt="" />
-		// 	<nav>
-		// 		<a href="/shop">Menu</a>
-		// 		<a href="/orders">Order Review</a>
-		// 		<a href="/inventory">Favourite Meals</a>
-		// 	</nav>
-		// </div>
 	);
 };
 
