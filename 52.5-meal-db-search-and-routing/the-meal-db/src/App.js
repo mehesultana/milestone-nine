@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import MealDetails from './components/MealDetails/MealDetails';
 import NotFound from './components/NotFound/NotFound';
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
 				<Switch>
 					<Route path="/home">
 						<Home></Home>
+					</Route>
+					<Route path="/meal/:strMeal">
+						<MealDetails></MealDetails>
 					</Route>
 					<Route path="*">
 						<NotFound></NotFound>
