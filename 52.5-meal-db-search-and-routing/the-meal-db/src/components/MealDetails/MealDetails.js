@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, ListGroup } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { Card, Container, Button } from 'react-bootstrap';
+import { useHistory, useParams } from 'react-router';
+import Header from '../Header/Header';
+import './MealDetails.css';
 
 const MealDetails = () => {
 	const { strMeal } = useParams();
+	const history = useHistory();
+
+	const backHome = () => {
+		history.push(`/home`);
+	};
 
 	const [meal, setMeal] = useState({});
 	useEffect(() => {
@@ -14,35 +21,20 @@ const MealDetails = () => {
 	}, [strMeal]);
 	const { strCategory, strArea, strInstructions, strMealThumb } = meal;
 	return (
-		<Card style={{ width: '18rem' }}>
-			<Card.Img variant="top" src={strMealThumb} />
-
-			<Card.Body>
-				<Card.Title>{strMeal}</Card.Title>
-				<Card.Text>{strArea}</Card.Text>
-				<Card.Text>{strCategory}</Card.Text>
-				<Card.Text>{strInstructions}</Card.Text>{' '}
-			</Card.Body>
-		</Card>
-		// <Container>
-		// 	<Card style={{ width: '18rem' }}>
-		// 		<Card.Img variant="top" src={strMealThumb} />
-		// 		<Card.Body>
-		// 			<Card.Title>{strMeal}</Card.Title>
-		// 			<Card.Text>{strArea}</Card.Text>
-		// 			<Card.Text>{strCategory}</Card.Text>
-		// 			<Card.Text>{strInstructions}</Card.Text>
-		// 		</Card.Body>
-		// 	</Card>
-		// </Container>
-
-		// <div>
-		// 	<img src={strMealThumb} alt="" />
-		// 	<h1>Name: {strMeal}</h1>
-		// 	<h2>Category: {strCategory}</h2>
-		// 	<h2>Area: {strArea}</h2>
-		// 	<p>Instructions: {strInstructions}</p>
-		// </div>
+		<Container className="details">
+			<Card>
+				<Card.Img variant="top" className="details-img" src={strMealThumb} />
+				<Card.Body>
+					<Card.Title>Name: {strMeal}</Card.Title>
+					<Card.Text>Category: {strCategory}</Card.Text>
+					<Card.Text>Area: {strArea}</Card.Text>
+					<Card.Text>Instructions: {strInstructions}</Card.Text>
+				</Card.Body>
+			</Card>
+			<Button variant="success" onClick={backHome}>
+				Back Home
+			</Button>
+		</Container>
 	);
 };
 

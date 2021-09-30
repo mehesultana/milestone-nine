@@ -13,11 +13,11 @@ const Header = () => {
 					<NavLink activeStyle={style} to="/home">
 						Home
 					</NavLink>
-					<NavLink activeStyle={style} to="/home">
-						Meal
+					<NavLink activeStyle={style} to="/meals">
+						Meals
 					</NavLink>
 					<NavLink activeStyle={style} to="/home">
-						Home
+						My Meals
 					</NavLink>
 				</Nav>
 			</Container>

@@ -1,0 +1,11 @@
+.details {
+	text-align: center;
+	background-color: rgb(231, 231, 231);
+	border: 2px solid rgb(0, 0, 0);
+
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+.details-img {
+	width: 50%;
+}

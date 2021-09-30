@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import MealDetails from './components/MealDetails/MealDetails';
+import Meals from './components/Meals/Meals';
 import NotFound from './components/NotFound/NotFound';
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
 				<Switch>
 					<Route path="/home">
 						<Home></Home>
+					</Route>
+					<Route path="/meals">
+						<Meals></Meals>
 					</Route>
 					<Route path="/meal/:strMeal">
 						<MealDetails></MealDetails>
