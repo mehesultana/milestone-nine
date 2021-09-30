@@ -24,7 +24,7 @@ const Meals = () => {
 				<FormControl onChange={handleSearchField} placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
 				<Button variant="warning">Search</Button>
 			</InputGroup>
-			{/* <input onChange={handleSearchField} placeholder="search your favourite meal" type="text" /> */}
+
 			<Row xs={1} md={4} className="g-4">
 				{meals.map((meal) => (
 					<Meal key={meal.idMeal} meal={meal}></Meal>

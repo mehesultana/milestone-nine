@@ -7,8 +7,8 @@ import './Meal.css';
 
 const Meal = (props) => {
 	const { strMeal, strCategory, strMealThumb } = props.meal;
+	const { handleAddToMyMeals, meal } = props;
 	const history = useHistory();
-
 	const handleDetailsClick = () => {
 		history.push(`/meal/${strMeal}`);
 	};

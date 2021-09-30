@@ -16,7 +16,7 @@ const Header = () => {
 					<NavLink activeStyle={style} to="/meals">
 						Meals
 					</NavLink>
-					<NavLink activeStyle={style} to="/home">
+					<NavLink activeStyle={style} to="/myMeals">
 						My Meals
 					</NavLink>
 				</Nav>

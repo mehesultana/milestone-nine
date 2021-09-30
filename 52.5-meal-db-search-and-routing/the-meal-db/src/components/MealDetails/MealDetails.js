@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Container, Button } from 'react-bootstrap';
 import { useHistory, useParams } from 'react-router';
-import Header from '../Header/Header';
 import './MealDetails.css';
 
 const MealDetails = () => {

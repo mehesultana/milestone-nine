@@ -16,12 +16,16 @@ function App() {
 					<Route path="/home">
 						<Home></Home>
 					</Route>
+					<Route exact path="/">
+						<Home></Home>
+					</Route>
 					<Route path="/meals">
 						<Meals></Meals>
 					</Route>
 					<Route path="/meal/:strMeal">
 						<MealDetails></MealDetails>
 					</Route>
+
 					<Route path="*">
 						<NotFound></NotFound>
 					</Route>
