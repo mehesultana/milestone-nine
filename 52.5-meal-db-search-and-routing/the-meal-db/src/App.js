@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import MealDetails from './components/MealDetails/MealDetails';
 import Meals from './components/Meals/Meals';
+import MyMeals from './components/MyMeals/MyMeals';
 import NotFound from './components/NotFound/NotFound';
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
 					</Route>
 					<Route path="/meal/:strMeal">
 						<MealDetails></MealDetails>
+					</Route>
+					<Route exact path="/my">
+						<MyMeals></MyMeals>
 					</Route>
 
 					<Route path="*">
