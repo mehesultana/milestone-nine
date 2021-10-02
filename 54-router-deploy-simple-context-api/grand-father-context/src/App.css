@@ -4,7 +4,7 @@
 
 .App div {
 	border: 2px solid gold;
-	margin: 20px;
-	padding: 10px;
+	margin: 6px 20px;
+	padding: 5px 10px;
 	border-radius: 15px;
 }
