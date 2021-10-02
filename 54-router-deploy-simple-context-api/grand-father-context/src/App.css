@@ -1,0 +1,10 @@
+.App {
+	text-align: center;
+}
+
+.App div {
+	border: 2px solid gold;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 15px;
+}
